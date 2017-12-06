@@ -13,6 +13,7 @@
 		944B11F31FD7D43C00667A23 /* Plan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 944B11F11FD7D43C00667A23 /* Plan.xcdatamodeld */; };
 		944B11F51FD7D43C00667A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944B11F41FD7D43C00667A23 /* Assets.xcassets */; };
 		944B11F81FD7D43C00667A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944B11F61FD7D43C00667A23 /* LaunchScreen.storyboard */; };
+		944B12001FD7D83D00667A23 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944B11FF1FD7D83D00667A23 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		944B11F41FD7D43C00667A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		944B11F71FD7D43C00667A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		944B11F91FD7D43C00667A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		944B11FF1FD7D83D00667A23 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				944B11EA1FD7D43C00667A23 /* AppDelegate.swift */,
 				944B11EC1FD7D43C00667A23 /* ViewController.swift */,
 				944B11EE1FD7D43C00667A23 /* Main.storyboard */,
+				944B11FF1FD7D83D00667A23 /* CollectionViewCell.swift */,
 				944B11F41FD7D43C00667A23 /* Assets.xcassets */,
 				944B11F61FD7D43C00667A23 /* LaunchScreen.storyboard */,
 				944B11F91FD7D43C00667A23 /* Info.plist */,
@@ -141,6 +144,7 @@
 			files = (
 				944B11ED1FD7D43C00667A23 /* ViewController.swift in Sources */,
 				944B11F31FD7D43C00667A23 /* Plan.xcdatamodeld in Sources */,
+				944B12001FD7D83D00667A23 /* CollectionViewCell.swift in Sources */,
 				944B11EB1FD7D43C00667A23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Plan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foundersc.Plan;
+				PRODUCT_BUNDLE_IDENTIFIER = wu.Plan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,7 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Plan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = foundersc.Plan;
+				PRODUCT_BUNDLE_IDENTIFIER = wu.Plan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
