@@ -13,7 +13,6 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var label: UILabel!
     
     override func awakeFromNib() {
-        self.layer.borderColor = UIColor.lightGray.cgColor
-        self.layer.borderWidth = 1
+    
     }
 }

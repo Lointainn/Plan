@@ -10,5 +10,5 @@ import UIKit
 
 class CollectionHeader: UICollectionReusableView {
         
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var monthLabel: UILabel!
 }
