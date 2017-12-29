@@ -1,5 +1,5 @@
 //
-//  CollectionHeader.swift
+//  MonthHeader.swift
 //  Plan
 //
 //  Created by Wu on 12/6.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionHeader: UICollectionReusableView {
+class MonthHeader: UICollectionReusableView {
         
     @IBOutlet weak var monthLabel: UILabel!
 }

@@ -1,5 +1,5 @@
 //
-//  CollectionViewCell.swift
+//  DayCell.swift
 //  Plan
 //
 //  Created by Wu on 12/6.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class DayCell: UICollectionViewCell {
     
     @IBOutlet weak var label: UILabel!
     
     override func awakeFromNib() {
-    
+        self.layer.borderColor = UIColor.lightGray.cgColor
+        self.layer.borderWidth = 0.5
     }
 }
