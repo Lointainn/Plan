@@ -18,37 +18,28 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var lastOffsetX: CGFloat = 0.0
     var switchPage: Bool = false
     var pageNum: Int = 0
-    
+    var data: Array<Month> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        for index in 0...9 {
+            let month:Month = Month()
+            month.monthTitle = "2018.\(index+1)"
+            data.append(month)
+        }
+        
+        print(data)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == monthCollection {
-            return 10
-        }
-        return 42
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if collectionView == monthCollection {
-            let cell: MonthCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MonthCell", for: indexPath) as! MonthCell
-            return cell
-        }
-        let cell: DayCell = collectionView.dequeueReusableCell(withReuseIdentifier: "DayCell", for: indexPath) as! DayCell
-        cell.label.text = "\(indexPath.item)"
+        let cell: MonthCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MonthCell", for: indexPath) as! MonthCell
+        cell.month = data[indexPath.item]
         return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        if collectionView == monthCollection {
-            return UICollectionReusableView.init()
-        }
-        let header: MonthHeader = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "MonthHeader", for: indexPath) as! MonthHeader
-        header.monthLabel.text = "\(indexPath.item)"
-        return header
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
@@ -61,11 +52,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         //向左滑
         if lastOffsetX < currentOffsetX {
-            print(currentOffsetX)
+//            print(currentOffsetX)
             
             
         } else if lastOffsetX > currentOffsetX {
-            print(currentOffsetX)
+//            print(currentOffsetX)
             
         }
         
@@ -73,7 +64,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        
+        pageNum = (Int)(scrollView.contentOffset.x / width_screen)
     }
     
 
